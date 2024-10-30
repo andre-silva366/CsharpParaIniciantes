@@ -1,4 +1,5 @@
-﻿using static System.Console;
+﻿using System.Globalization;
+using static System.Console;
 
 // Comaparando Strings
 
@@ -93,14 +94,81 @@
 //Console.WriteLine($"Aniversário: {dtAniversario:ddd/MMM/yyyy}");
 //Console.WriteLine($"Aniversário: {dtAniversario:dddd dd/MMMM/yyyy}");
 
-DateTime hoje = DateTime.Today;
-WriteLine("TODAY - retorna a data atual");
-WriteLine($"TODAY: {hoje:dd/MM/yyyy HH:mm:ss}");
+//DateTime hoje = DateTime.Today;
+//WriteLine("TODAY - retorna a data atual");
+//WriteLine($"TODAY: {hoje:dd/MM/yyyy HH:mm:ss}");
 
-WriteLine();
+//WriteLine();
 
-DateTime DataHora = DateTime.Now;
-WriteLine($"NOW - retorna a data e a hora atual");
-WriteLine($"Now: {DataHora:dd/MM/yyyy HH:mm:ss}");
+//DateTime DataHora = DateTime.Now;
+//WriteLine($"NOW - retorna a data e a hora atual");
+//WriteLine($"Now: {DataHora:dd/MM/yyyy HH:mm:ss}");
+
+//DateTime DataHora = DateTime.Now.ToUniversalTime();
+
+//WriteLine("DAY / MONTH / YEAR - capturar o dia, mês e ano separadamente");
+//WriteLine($"Dia: {DataHora.Day}");
+//WriteLine($"Mês: {DataHora.Month}");
+//WriteLine($"Ano: {DataHora.Year}");
+//WriteLine($"Kind: {DataHora.Kind}");
+//WriteLine($"Hora: {DataHora.Hour}");
+//WriteLine($"Minuto: {DataHora.Minute}");
+//WriteLine($"Dia da semana: {DataHora.DayOfWeek}");
+//WriteLine($"Dia do ano: {DataHora.DayOfYear}");
+
+//DateTime dtPedido = DateTime.Today;
+//// adiciona 35 dias
+//DateTime dtVencto = dtPedido.AddDays(35);
+
+//// adiciona 2 meses
+//DateTime dtPagto = dtVencto.AddMonths(2);
+//WriteLine($"Pedido feito em {dtPedido:dd/MMM/yyyy} vence em {dtVencto:dd/MMM/yyyy}");
+//WriteLine($"Formatação completa: {dtVencto.ToLongDateString()}");
+//WriteLine($"Formatação curta: {dtVencto.ToShortDateString()}");
+//WriteLine();
+
+//// dia da semana
+//WriteLine($"Dia da semana: {dtVencto.DayOfWeek}");
+//WriteLine($"Dia da semana em português: {dtVencto.ToString("dddd",new CultureInfo("pt-BR"))}");
+//WriteLine($"Número do dia da semana: {(int) dtVencto.DayOfWeek}");
+//WriteLine();
+
+//// dia do ano
+//WriteLine($"Dia do ano: {dtVencto.DayOfYear}");
+//WriteLine();
+
+//// subtrai 2 datas
+//var qtdeDias = dtPagto.Subtract(dtPedido);
+//WriteLine($"Entre o pedido e o pagamento foram {qtdeDias:dd} dias");
+
+// Conversoes de Datas
+WriteLine("Conversão de Texto para Date");
+string dataTexto = "30/06/2024";
+DateTime dataTextoConvertida;
+
+// tentativa (TryParse) de conversão de dataTexto 
+// caso dê certo a saida OUT será em dataTextoConvertida
+if (DateTime.TryParse(dataTexto, out dataTextoConvertida))
+{
+    WriteLine("Data com conversão aceita");
+}
+else
+{
+    WriteLine("Erro na conversão da data");
+}
+ 
+string dataTextoErrada = "30/metade do ano/2023";
+DateTime dataTextoErradaConvertida;
+if(DateTime.TryParse(dataTextoErrada, out dataTextoErradaConvertida))
+{
+    WriteLine("Data com conversão aceita");
+}
+else
+{
+    WriteLine("Erro na conversão da data");
+}
+
+WriteLine($"DataTextoConvertida: {dataTextoConvertida}");
+WriteLine($"DataTextoErradaConvertida: {dataTextoErradaConvertida}");
 
 ReadKey();
