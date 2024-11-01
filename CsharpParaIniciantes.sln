@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodosExtensao", "MetodosE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParametrosOpcionais", "ParametrosOpcionais\ParametrosOpcionais.csproj", "{67EBF8B9-1A01-4CE7-BD76-C32B4B7BCE03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dicionario", "Dicionario\Dicionario.csproj", "{ABB411CF-6801-442A-B198-073EF1E489B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{67EBF8B9-1A01-4CE7-BD76-C32B4B7BCE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67EBF8B9-1A01-4CE7-BD76-C32B4B7BCE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67EBF8B9-1A01-4CE7-BD76-C32B4B7BCE03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB411CF-6801-442A-B198-073EF1E489B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB411CF-6801-442A-B198-073EF1E489B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB411CF-6801-442A-B198-073EF1E489B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB411CF-6801-442A-B198-073EF1E489B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{36CFDBDC-5529-45EC-BA55-42344E853DEA} = {178628FF-2497-4D3B-8D56-D94F87527D36}
 		{CD1017FC-0C1D-4410-A2EE-56A0287713EA} = {178628FF-2497-4D3B-8D56-D94F87527D36}
 		{67EBF8B9-1A01-4CE7-BD76-C32B4B7BCE03} = {178628FF-2497-4D3B-8D56-D94F87527D36}
+		{ABB411CF-6801-442A-B198-073EF1E489B2} = {178628FF-2497-4D3B-8D56-D94F87527D36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74E2CBFD-5037-4C2C-9094-6A3CCFC19223}
