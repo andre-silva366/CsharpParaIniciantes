@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parse", "Parse\Parse.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertTo", "ConvertTo\ConvertTo.csproj", "{D095661D-A4FD-4352-9990-3F6FEF013FFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColecoesMaisComuns", "ColecoesMaisComuns\ColecoesMaisComuns.csproj", "{36CFDBDC-5529-45EC-BA55-42344E853DEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColecoesMaisComuns", "ColecoesMaisComuns\ColecoesMaisComuns.csproj", "{36CFDBDC-5529-45EC-BA55-42344E853DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodosExtensao", "MetodosExtensao\MetodosExtensao.csproj", "{CD1017FC-0C1D-4410-A2EE-56A0287713EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{36CFDBDC-5529-45EC-BA55-42344E853DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36CFDBDC-5529-45EC-BA55-42344E853DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36CFDBDC-5529-45EC-BA55-42344E853DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD1017FC-0C1D-4410-A2EE-56A0287713EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD1017FC-0C1D-4410-A2EE-56A0287713EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD1017FC-0C1D-4410-A2EE-56A0287713EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD1017FC-0C1D-4410-A2EE-56A0287713EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{B05FABCB-DE56-4526-9C69-5EA90B7DE9A6} = {178628FF-2497-4D3B-8D56-D94F87527D36}
 		{D095661D-A4FD-4352-9990-3F6FEF013FFD} = {178628FF-2497-4D3B-8D56-D94F87527D36}
 		{36CFDBDC-5529-45EC-BA55-42344E853DEA} = {178628FF-2497-4D3B-8D56-D94F87527D36}
+		{CD1017FC-0C1D-4410-A2EE-56A0287713EA} = {178628FF-2497-4D3B-8D56-D94F87527D36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {74E2CBFD-5037-4C2C-9094-6A3CCFC19223}
