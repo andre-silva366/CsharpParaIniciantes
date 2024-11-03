@@ -15,6 +15,17 @@ WriteLine(contadorCaracteres("Visual C#"));
 Func<string, int> contaPalavras = (string texto) => texto.Split(' ').Where(x => x != "").Count();
 WriteLine(contaPalavras("       Brasil  campeão            mundial     de     volei"));
 
+//string texto = "       Brasil  campeão            mundial     de     volei";
+//var novoTexto = texto.Split(' ').Where(x => x!= "") ;
+
+//WriteLine("teste split começa");
+//foreach (var item in novoTexto)
+//{
+//    WriteLine(item);
+//}
+//WriteLine("teste split termina");
+
+
 // calcular o imposto
 // salario, perc, aliquota
 // formula: salario * (perc/100) - aliquota
